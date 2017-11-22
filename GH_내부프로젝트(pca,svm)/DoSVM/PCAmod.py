@@ -6,11 +6,11 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import scale
 import matplotlib.pyplot as plt
 from random import shuffle, seed
-import os
+import os, copy
 os.chdir('C:\\Studying\\myvenv\\GrowthHackers\\GH_내부프로젝트(pca,svm)\\DoSVM')
 
-def opener():
-    with open('..\\voice.csv', 'r') as f:
+def opener(inputfile):
+    with open(inputfile, 'r') as f:
         #tuple of 3169 data
         #0: male, 1: female
         lines = f.readlines()
@@ -26,6 +26,10 @@ def opener():
                 else:
                     y_at0.append([int(splited[0])])
                     X_at0.append([float(value) for value in splited[1:]])
+            else:
+                line= line[:-1]
+                attributes= line.split(',')
+                print('Case when the attributes are {}:\n'.format(str(attributes)))
         length0= len(y_at0)
         length1= len(y_at1)
     random.Random(0).shuffle(X_at1)
@@ -34,10 +38,10 @@ def opener():
     y_train = np.array(y_at1[int(0.2*length1):] + y_at0[int(0.2*length0):])
     X_test = np.array(X_at1[0:int(0.2*length1)] + X_at0[0:int(0.2*length0)])
     y_test = np.array(y_at1[0:int(0.2*length1)] + y_at0[0:int(0.2*length0)])
-    return (X_train, y_train, X_test, y_test)
+    return (X_train, y_train, X_test, y_test, attributes)
 
 def do_pca(X_train, y_train, X_test, y_test):
-    pca = PCA(n_components=10)
+    pca = PCA(n_components=2)
     pca.fit(X_train)
     var = pca.explained_variance_ratio_
     var_cum=np.cumsum(np.round(var, decimals=4)*100)
@@ -53,6 +57,25 @@ def do_pca(X_train, y_train, X_test, y_test):
         print(max_idx)
     return (X_train_trf, y_train, X_test_trf, y_test)
 
+def just_scale(X_train, y_train, X_test, y_test):
+    X_train_trf= scale(X_train)
+    X_test_trf = scale(X_test)
+    return (X_train_trf, y_train, X_test_trf, y_test)
+
+def get_param(X_train, y_train, X_test, y_test, attributes):
+    X_train_list= []
+    X_test_list= []
+    X_att_list= []
+    for i in range(np.shape(X_train)[1]-1):
+        for j in range(i+1,np.shape(X_train)[1]):
+            X_train_list.append(X_train[:, (i,j)])
+            X_test_list.append(X_test[:, (i,j)])
+            X_att_list.append((attributes[i], attributes[j]))
+            pass
+        pass
+    print(X_att_list)
+    return (X_train_list, y_train, X_test_list, y_test, X_att_list)
+
 def minmax(X_2d):
     X0_min= X_2d[:,0].min()
     X0_max= X_2d[:,0].max()
@@ -61,13 +84,15 @@ def minmax(X_2d):
     return (X0_min, X0_max, X1_min, X1_max)
 ##########################################################################################
 if __name__== '__main__':
-    (X_train, y_train, X_test, y_test)= opener()
+    (X_train, y_train, X_test, y_test)= opener('..\\Selected Fields.csv')
     # print(X_train, y_train, X_test, y_test)
-    X_2d, y, _, _= do_pca(X_train, y_train, X_test, y_test)
-    print(X_2d)
-    print(y)
-    print(len(X_train), len(y_train), len(X_test), len(y_test))
-    print(minmax(X_2d))
+    # X_2d, y, _, _= do_pca(X_train, y_train, X_test, y_test)
+    X_train, y_train, X_test, y_test= just_scale(X_train, y_train, X_test, y_test)
+    X_2d, y, _, _= get_param(X_train, y_train, X_test, y_test)
+    print(type(X_2d), X_2d)
+    print(type(y), y)
+    # print(len(X_train), len(y_train), len(X_test), len(y_test))
+    # print(minmax(X_2d))
 
 # result ############################################################################
 # [  9.98674278e-01   1.27360037e-03   4.41226612e-05   5.21008783e-06

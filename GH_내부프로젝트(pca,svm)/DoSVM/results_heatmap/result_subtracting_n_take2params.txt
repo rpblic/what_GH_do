@@ -1,0 +1,109 @@
+for 0th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.843003        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.832765        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.822526        
+for 1th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.832765        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.832765        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.832765        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.819113        
+for 2th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.832765        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.832765        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.822526        
+for 3th case:
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.822526        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.819113        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.819113        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.798635        
+for 4th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.836177        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.825939        
+for 5th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.829352        
+for 6th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.822526        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.832765        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.795222        
+for 7th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.829352        
+for 8th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.812287        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.829352        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.795222        
+for 9th case:
+
+	When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 1 and gamma is 10.0, the score of prediction is: 0.825939        
+	When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 1, the score of prediction is: 0.839590        
+	When C is 10.0 and gamma is 10.0, the score of prediction is: 0.802048 

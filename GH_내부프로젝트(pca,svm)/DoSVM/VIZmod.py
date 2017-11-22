@@ -5,11 +5,11 @@ os.chdir('C:\\Studying\\myvenv\\GrowthHackers\\GH_내부프로젝트(pca,svm)\\D
 import matplotlib.pyplot as plt
 import SVMmod, PCAmod
 
-def plot_ex(X_2d, y, clsfic):
+def plot_ex(X_2d, y, clsfic, label= None):
     C_ex= [1e-1, 1, 1e+1]
     gamma_ex= [1e-1, 1, 1e+1]
     (X0_min, X0_max, X1_min, X1_max)= PCAmod.minmax(X_2d)
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(8,6))
     xx, yy = np.meshgrid(np.linspace(X0_min, X0_max, 200), np.linspace(X1_min, X1_max, 200))
     for (k, (C, gamma, clf)) in enumerate(clsfic):
         Z = clf.decision_function(np.c_[xx.ravel(), yy.ravel()])
@@ -17,6 +17,9 @@ def plot_ex(X_2d, y, clsfic):
         plt.subplot(len(C_ex), len(gamma_ex), k + 1)
         plt.title("gamma=10^%d, C=10^%d" % (np.log10(gamma), np.log10(C)),
                   size='medium')
+        if label:
+            plt.xlabel(label[0])
+            plt.ylabel(label[1])
         # plt.pcolormesh(xx, yy, -Z, cmap=plt.cm.RdBu)
         # plt.contour(xx, yy, Z, colors= ['k', 'k', 'k'], linestyles= ['--', '-', '--'], levels= [-0.5, 0, 0.5])
         contour= plt.contour(xx, yy, Z, colors= 'k', linestyles= '--', levels= [-0.5, 0, 0.5])
@@ -27,6 +30,7 @@ def plot_ex(X_2d, y, clsfic):
         plt.xticks(np.arange(5))
         plt.yticks(np.arange(5))
         plt.autoscale(enable= True, axis= 'x')
+    plt.subplots_adjust(wspace= 0.3, hspace= 0.6)
     plt.show()
 
 def plot_heatmap(grid):
