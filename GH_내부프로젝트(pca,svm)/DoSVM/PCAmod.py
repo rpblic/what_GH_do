@@ -29,6 +29,7 @@ def opener(inputfile):
             else:
                 line= line[:-1]
                 attributes= line.split(',')
+                attributes= attributes[1:]
                 print('Case when the attributes are {}:\n'.format(str(attributes)))
         length0= len(y_at0)
         length1= len(y_at1)
