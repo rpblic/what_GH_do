@@ -1,0 +1,16 @@
+When C is 0.1 and gamma is 0.1, the score of prediction is: 0.839590    
+When C is 0.1 and gamma is 1, the score of prediction is: 0.839590    
+When C is 0.1 and gamma is 10.0, the score of prediction is: 0.839590    
+When C is 1 and gamma is 0.1, the score of prediction is: 0.839590    
+When C is 1 and gamma is 1, the score of prediction is: 0.832765    
+When C is 1 and gamma is 10.0, the score of prediction is: 0.836177    
+When C is 10.0 and gamma is 0.1, the score of prediction is: 0.839590    
+When C is 10.0 and gamma is 1, the score of prediction is: 0.774744    
+When C is 10.0 and gamma is 10.0, the score of prediction is: 0.822526  
+
+The best estimator parameter is:  SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=10.0, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+The score of it is:  0.840677966102
+The parameters of it is:  {'C': 1.0, 'gamma': 10.0}
