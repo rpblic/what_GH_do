@@ -43,6 +43,7 @@ def opener(inputfile):
 
 def do_pca(X_train, y_train, X_test, y_test):
     pca = PCA(n_components=10)
+
     pca.fit(X_train)
     var = pca.explained_variance_ratio_
     var_cum=np.cumsum(np.round(var, decimals=4)*100)
